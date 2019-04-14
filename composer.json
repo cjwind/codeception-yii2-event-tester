@@ -1,6 +1,6 @@
 {
     "name": "cjwind/codeception-yii2-event-tester",
-    "description": "Yii2 event tester for codeception.",
+    "description": "Codeception module for test yii2 event.",
     "type": "library",
     "license": "MIT",
     "authors": [
