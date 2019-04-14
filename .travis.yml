@@ -4,7 +4,9 @@ php:
   - '7.0'
 
 before_script:
+  - composer global show
   - composer global require "fxp/composer-asset-plugin:^1.4.4"
-  - composer install --no-interaction --prefer-dist
+  - composer global show
+  - composer install --no-interaction
 
 script: 'phpunit --bootstrap vendor/autoload.php tests'
