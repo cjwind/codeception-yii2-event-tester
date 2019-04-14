@@ -5,7 +5,7 @@ php:
 
 before_script:
   - composer global config github-protocols https
-  - composer global require "fxp/composer-asset-plugin:^1.4.4"
+  - composer global require "fxp/composer-asset-plugin"
   - composer config github-protocols https
   - composer install --no-interaction --prefer-dist
 
