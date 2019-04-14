@@ -7,6 +7,6 @@ before_script:
   - composer global config github-protocols https
   - composer global require "fxp/composer-asset-plugin:^1.4.4"
   - composer config github-protocols https
-  - composer install --no-interaction
+  - composer install --no-interaction --perfer-dist
 
 script: 'phpunit --bootstrap vendor/autoload.php tests'
