@@ -2,7 +2,7 @@
 namespace cjwind\Yii2EventTester;
 
 class Yii2EventTester extends \Codeception\Module {
-    public function assertTriggered($event, $object, $testedFunction) {
+    public function assertEventTriggered($event, $object, $testedFunction) {
         $called = false;
         $object->on($event, function ($event) use (&$called) {
             $called = true;
