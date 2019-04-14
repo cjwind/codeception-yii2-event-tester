@@ -37,14 +37,22 @@ class EventTestedClassTest extends \Codeception\Test\Unit {
      */
     protected $tester;
 
-    public function testBar() {
+    public function testEventTrigger() {
         $obj = new EventTestedClass;
         $this->tester->assertEventTriggered($obj, EventTestedClass::EVENT_FOO, function() use ($obj) {
             $obj->bar();    // Function should trigger event
         });
+
+        $this->tester->assertEventTriggered(EventTestedClass::class, EventTestedClass::EVENT_BAR, function() {
+            // Do sth. should trigger EventTestedClass::EVENT_BAR
+        });
     }
 }
 ```
+
+## Class-level Event
+
+Because object's [trigger()](https://www.yiiframework.com/doc/api/2.0/yii-base-component#trigger()-detail) also invokes class-level handler, assertion of class-level event trigger will pass when the event is triggered by an object.
 
 ### License
 
