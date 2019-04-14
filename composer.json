@@ -17,6 +17,8 @@
     "require-dev": {
         "phpunit/phpunit": "^6.5",
         "yiisoft/yii2": "^2.0"
-    }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --color=always --bootstrap vendor/autoload.php tests"
     }
 }
