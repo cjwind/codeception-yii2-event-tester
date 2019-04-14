@@ -9,7 +9,6 @@
             "email": "cwentsai@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "cjwind\\": "src/"
