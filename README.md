@@ -4,7 +4,9 @@ Codeception module which test whether yii2 event is triggered.
 
 ## Installation
 
+```
 $ composer require cjwind/codeception-yii2-event-tester
+```
 
 ## Usage
 
