@@ -1,5 +1,5 @@
 <?php
-namespace Yii2EventTester;
+namespace cjwind\Yii2EventTester;
 
 class Yii2EventTester extends \Codeception\Module {
     public function assertTriggered($event, $object, $testedFunction) {
