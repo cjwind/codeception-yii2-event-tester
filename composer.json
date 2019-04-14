@@ -21,5 +21,8 @@
     },
     "scripts": {
         "test": "./vendor/bin/phpunit --color=always --bootstrap vendor/autoload.php tests"
+    },
+    "require": {
+        "fxp/composer-asset-plugin": "^1.4"
     }
 }
