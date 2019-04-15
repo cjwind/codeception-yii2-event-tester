@@ -5,9 +5,7 @@ php:
 
 before_script:
   - composer config github-oauth.github.com ${GH_TOKEN}
-  # - composer config --global github-protocols https
   - composer global require "fxp/composer-asset-plugin"
-  # - composer config github-protocols https
-  - composer install -vvv --no-interaction --prefer-dist
+  - composer install --no-interaction --prefer-dist
 
 script: 'phpunit --bootstrap vendor/autoload.php tests'
