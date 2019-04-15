@@ -54,7 +54,7 @@ class EventTestedClassTest extends \Codeception\Test\Unit {
 
 ## Class-level Event
 
-Because object's [trigger()](https://www.yiiframework.com/doc/api/2.0/yii-base-component#trigger()-detail) also invokes class-level handler, assertion of class-level event trigger will pass when the event is triggered by an object.
+Because object's [trigger()](https://www.yiiframework.com/doc/api/2.0/yii-base-component#trigger()-detail) also invokes class-level handler, trigger assertion of class-level event will pass when the event is triggered by an object.
 
 ### License
 
