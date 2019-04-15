@@ -1,5 +1,7 @@
 # Yii2EventTester
 
+[![Build Status](https://travis-ci.com/cjwind/codeception-yii2-event-tester.svg?branch=master)](https://travis-ci.com/cjwind/codeception-yii2-event-tester)
+
 Codeception module which test whether yii2 event is triggered.
 
 ## Installation
